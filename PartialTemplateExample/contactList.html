@@ -1,0 +1,15 @@
+<div>
+    <p>List of all contacts</p>
+    <ul>
+        {{#each contacts}}
+        <div class="contactEntry" style="border: 3px solid darkseagreen">
+             {{> contact}}
+             <p>----</p>
+        </div>
+        {{else}}
+        <p>No contacts found</p>
+        {{/each}}
+
+    </ul>
+
+</div>
